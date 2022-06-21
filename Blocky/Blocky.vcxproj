@@ -143,6 +143,7 @@
     <ClCompile Include="src\sys\config.cpp" />
     <ClCompile Include="src\sys\logger.cpp" />
     <ClCompile Include="src\sys\render.cpp" />
+    <ClCompile Include="_boardLib\src\menu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\sys\config.h" />
@@ -150,6 +151,8 @@
     <ClInclude Include="include\sys\includes.h" />
     <ClInclude Include="include\sys\logger.h" />
     <ClInclude Include="include\sys\render.h" />
+    <ClInclude Include="include\sys\settings.h" />
+    <ClInclude Include="_boardLib\include\menu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

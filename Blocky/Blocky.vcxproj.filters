@@ -1,31 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="_menuLib">
-      <UniqueIdentifier>{4ef1c3b3-635d-48aa-b732-a72c677970e7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="_cooldownLib">
       <UniqueIdentifier>{3ea99f04-1564-4d08-8ff6-a139dcf60d0d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\src">
-      <UniqueIdentifier>{53e4fa76-80fa-44a1-a44c-bf209108b118}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\sys">
-      <UniqueIdentifier>{798d6fcc-ee7b-477e-b8c6-42b41ed93c30}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="_menuLib\src">
-      <UniqueIdentifier>{96574c1d-4549-4b47-99bd-f8efc6cdb454}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="_menuLib\include">
-      <UniqueIdentifier>{e1e75612-1aa8-4643-b1cd-474771f424e4}</UniqueIdentifier>
     </Filter>
     <Filter Include="_cooldownLib\include">
       <UniqueIdentifier>{0608b383-ef63-4aaf-bfb5-7c10a9454b63}</UniqueIdentifier>
@@ -33,39 +10,68 @@
     <Filter Include="_cooldownLib\src">
       <UniqueIdentifier>{573923f1-5aed-4e1a-812d-9d222f85a37b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\sys">
+    <Filter Include="Include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Include\sys">
+      <UniqueIdentifier>{798d6fcc-ee7b-477e-b8c6-42b41ed93c30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\sys">
       <UniqueIdentifier>{517d31f2-56e5-4945-a06c-956869153a9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_boardLib">
+      <UniqueIdentifier>{4ef1c3b3-635d-48aa-b732-a72c677970e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_boardLib\src">
+      <UniqueIdentifier>{96574c1d-4549-4b47-99bd-f8efc6cdb454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_boardLib\include">
+      <UniqueIdentifier>{e1e75612-1aa8-4643-b1cd-474771f424e4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
-      <Filter>Source Files\src</Filter>
-    </ClCompile>
     <ClCompile Include="src\sys\config.cpp">
-      <Filter>Source Files\src\sys</Filter>
+      <Filter>src\sys</Filter>
     </ClCompile>
     <ClCompile Include="src\sys\render.cpp">
-      <Filter>Source Files\src\sys</Filter>
+      <Filter>src\sys</Filter>
     </ClCompile>
     <ClCompile Include="src\sys\logger.cpp">
-      <Filter>Source Files\src\sys</Filter>
+      <Filter>src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="_boardLib\src\menu.cpp">
+      <Filter>_boardLib\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\sys\config.h">
-      <Filter>Header Files\sys</Filter>
+      <Filter>Include\sys</Filter>
     </ClInclude>
     <ClInclude Include="include\sys\includes.h">
-      <Filter>Header Files\sys</Filter>
+      <Filter>Include\sys</Filter>
     </ClInclude>
     <ClInclude Include="include\sys\render.h">
-      <Filter>Header Files\sys</Filter>
+      <Filter>Include\sys</Filter>
     </ClInclude>
     <ClInclude Include="include\sys\constants.h">
-      <Filter>Header Files\sys</Filter>
+      <Filter>Include\sys</Filter>
     </ClInclude>
     <ClInclude Include="include\sys\logger.h">
-      <Filter>Header Files\sys</Filter>
+      <Filter>Include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\settings.h">
+      <Filter>Include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="_boardLib\include\menu.h">
+      <Filter>_boardLib\include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
